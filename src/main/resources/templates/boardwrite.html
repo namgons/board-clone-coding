@@ -21,17 +21,19 @@
         align-items: center;
         justify-content: center;
     }
-    .layout > * {
+    .layout * {
         width: 100%;
         box-sizing: border-box;
         margin-top: 10px;
     }
 </style>
 <body>
-    <div class="layout">
-        <input type="text">
-        <textarea></textarea>
-        <button>작성</button>
+    <div>
+        <form class="layout" action="/board/writepro" method="post">
+            <input name="title" type="text">
+            <textarea name="content"></textarea>
+            <button type="submit">작성</button>
+        </form>
     </div>
 </body>
 </html>
